@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <head>
+        <!-- Custom css goes here Css  -->
+       
+        <css src="Bss_CreateMenuBackend::css/adminhtml.css"/>
+    </head>
+   <body>
+       <referenceContainer name="content">
+               <block name="logfiles" class="Magento\Backend\Block\Template" template="Bss_CreateMenuBackend::index.phtml" />
+       </referenceContainer>
+   </body>
+</page>

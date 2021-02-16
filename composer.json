@@ -1,0 +1,25 @@
+
+{
+  "name": "bss/createmenubackend",
+  "description": "An admin page module that display all logs files in sort order",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Mehtab Ahmed",
+      "email": "ahmedmehtab176@gmail.com"
+    }
+  ],
+  "license": [
+	"OSL-3.0"
+  ],
+  "require": {
+	"php": "~5.6.0|7.0.2|7.0.4|~7.0.6"
+  },
+  "autoload": {
+	"files": [ "registration.php" ],
+	"psr-4": {
+	  "BSS\\CreateMenuBackend\\": ""
+	}
+  }
+}

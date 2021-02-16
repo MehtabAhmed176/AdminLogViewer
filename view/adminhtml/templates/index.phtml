@@ -1,0 +1,25 @@
+<?php
+use Magento\Framework\View\Element\Template;
+/** @var Template $block; */
+?>
+
+<?php $items = $block->getData('log_files') ?>
+
+
+        <table class="data table table-order-items history" id="customers">
+            <tr>
+                <th class="col title">S.No.</th>
+                <th class="col title">File Name</th>
+                <th class="col title">Size (Kb)</th>
+                <th class="col title">File Path</th>
+            </tr>
+            <?php foreach ($items as $key=>$item): ?>
+            <tr>
+                <td class="td"><?= $key ?></td>
+                <td class="td"><?= substr (strrchr($item['path'], "/"), 1) ?></td>
+                <td class="td"><?= $item['size']. " bytes"?></td>
+                <td class="td"><?= $item['path']?></td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+
