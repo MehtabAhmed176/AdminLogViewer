@@ -7,7 +7,7 @@ Installation
 -------------
 
 **Download Zip**
-* Download the [Zip File](https://github.com/MehtabAhmed176/BackendAdminLogger/archive/master.zip)
+* Download the [Zip File](https://github.com/MehtabAhmed176/AdminLogViewer/archive/master.zip)
 * Extract & upload the files to `/path/to/magento2/app/code/Bss/CreateMenuBackend`
 * The code should reside in the above directory structure
 
@@ -25,3 +25,4 @@ chmod -R 777 var/ generated/
 ScreenShot
 -------------
 ![Screenshot](adminpanel.png)
+ 
