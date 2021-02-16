@@ -21,3 +21,7 @@ php bin/magento setup:static-content:Deploy -f
 
 chmod -R 777 var/ generated/
 ```
+
+ScreenShot
+-------------
+![Screenshot](adminpanel.png)
