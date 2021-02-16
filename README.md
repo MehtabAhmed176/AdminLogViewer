@@ -7,26 +7,21 @@ Installation
 -------------
 
 **Download Zip**
-* Download the [Zip File](https://github.com/MagePsycho/magento2-custom-shipping/archive/master.zip)
-* Extract & upload the files to `/path/to/magento2/app/code/MagePsycho/Customshipping/`
+* Download the [Zip File](https://github.com/MehtabAhmed176/BackendAdminLogger/archive/master.zip)
+* Extract & upload the files to `/path/to/magento2/app/code/Bss/CreateMenuBackend`
+* The code should reside in the above directory structure
 
-After installation by either means, enable the extension by running following commands (again from root of Magento2 installation):
+After installation by , enable the extension by running following commands (again from root of Magento2 installation):
 ```
-php bin/magento module:enable MagePsycho_Customshipping --clear-static-content
 php bin/magento setup:upgrade
+
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:Deploy -f 
+
+chmod -R 777 var/ generated/
 ```
 
-
-[Click here to read more on module packaging, installation & activation in Magento 2](http://www.blog.magepsycho.com/install-magento-2-module-from-github-or-bitbucket-repository-using-composer/)
-
-Screenshots
------------
-![Backend Settings](http://www.blog.magepsycho.com/wp-content/uploads/2015/12/magento2-custom-shipping.png "Backend Settings")
-1. Screentshot - Backend Settings
-
-![Checkout Steps 1 - Checkout](http://www.blog.magepsycho.com/wp-content/uploads/2015/11/magento2-custom-shipping-checkout.png "Checkout Steps 1 - Checkout")
-2. Checkout Steps 1 - Checkout
-
-![Checkout Steps 2 - Summary](http://www.blog.magepsycho.com/wp-content/uploads/2015/11/magento2-custom-shipping-checkout-summary.png "Checkout Steps 2 - Summary")
-3. Checkout Steps 2 - Summary
-
+ScreenShot
+-------------
+![Screenshot](adminpanel.png)
